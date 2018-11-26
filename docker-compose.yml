@@ -32,7 +32,7 @@ services:
 
   # php-fpm container used as PHP runtime for the web server
   php-fpm:
-    image: php-dev:7.0-fpm
+    image: drupaldocker/php-dev:7.0-fpm
     volumes:
       - .:/var/www/html:rw
 
