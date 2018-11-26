@@ -39,10 +39,6 @@ services:
   # The web server used to access the developement website
   web:
     image: nginx
-    # We define the root directory for NGinx. Web Directory is the root of Drupal after download with composer.
-    environment:
-      DOCROOT: /var/www/html/web
-    # We define port. The variable PORT is defined in the .env file.
     ports:
       - 80:80
     volumes:
